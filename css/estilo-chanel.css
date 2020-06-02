@@ -1,0 +1,223 @@
+/*FUENTES////////////////*/
+body{
+    font-family: 'Assistant', sans-serif;
+    margin: 0;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+h2,h3{
+    font-family: 'Archivo', sans-serif;
+}
+
+/*SKIN///////////////////*/
+header{
+    background-color: white; 
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    padding: 20px 10px;
+    justify-content: center;
+    align-content: center;
+}
+.menu a:hover{
+    background-color: black;
+    color: white;
+}
+.lista-menu{
+    list-style: none;
+    
+}
+.logo{
+    height: 60px;
+    width: auto;
+    justify-content: center;
+}
+footer{
+    background-color:black;
+    text-align: center;
+    justify-content: center;
+}
+.redes{
+    margin: 0;
+}
+.redes a{
+    text-decoration: none;
+    color: white; 
+}
+.redes li{
+    list-style: none;
+}
+.contenido-contacto{
+    justify-content: center;
+    /*text-align: center;*/
+    padding: 10px;
+}
+
+#formcontacto input,
+#formcontacto textarea {
+    display: block;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+#formcontacto input[type=submit]{
+    background-color: black;
+    color: white;
+    padding: 14px;
+    margin-top:10px;
+}
+
+#Portada{
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+.fondo-portada a{
+    text-decoration: none;
+}
+.hydra-beauty{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 27px;
+    text-shadow: 5px 5px 8px black;
+    white-space: nowrap;
+}
+.ver-mas{
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+    justify-content: center;
+    box-sizing: 20px;
+    color: white;
+    white-space: nowrap;
+    font-size: 17px;
+}
+#Acercade p{
+   text-align: justify;
+   padding: 10px;
+}
+.aprende{
+    color: black;
+    font-weight: bold;
+}
+.contenido a{
+   color: black;
+    
+}
+
+.contenido-hydra a{
+    color: black;
+}
+/* OPCION
+h2{
+    background-color: black;
+    color: white;
+}*/
+
+/*LAYOUT/////////////////*/
+
+.lista-menu{
+    display: flex;
+}
+section{
+    padding-top: 35px;
+}
+.contenido{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1280px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenido-hydra{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1280px;
+    justify-content: center;
+}
+.contenido p,a{
+    display: flex;
+    max-width: 1024px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.contenido h3{
+    text-align: center;
+}
+.contenido-hydra h3{
+    text-align: center;
+}
+
+.contenido-hydra p,a{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1024px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.fondo-portada{
+    background-image: url(../imagenes/portada.jpeg);
+    /*padding: 300px;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    justify-content: space-between;  
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.redes li{
+    padding: 20px 10px;
+}
+
+
+/*AT-RULES*/
+/*mobile*/
+@media (min-width:480px){
+    /*
+.contenido-hydra{
+    flex-wrap: wrap;
+}*/
+    .fondo-portada{
+        padding-bottom: 150px;
+        padding-top: 150px;
+    }
+    header{
+        position: fixed;
+        top: 0;
+    }
+    .contenido-hydra{
+        flex-wrap: wrap;
+    }
+}
+
+/*PC*/
+@media (min-width:1024px){
+     .contenido-hydra{
+        flex-wrap: nowrap;
+    }
+}
